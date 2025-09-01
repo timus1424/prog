@@ -7,14 +7,14 @@ int main() {
     scanf("%d", &n1);
     int *l1 = (int*)malloc(n1 * sizeof(int));   // allocate memory
     printf("Enter %d elements (sorted): ", n1);
-    for (int i=0; i<n1; i++) scanf("%d", &l1[i]);
-
+    for (int i=0; i<n1; i++) 
+        scanf("%d", &l1[i]);
     printf("Enter size of second list: ");
     scanf("%d", &n2);
     int *l2 = (int*)malloc(n2 * sizeof(int));
     printf("Enter %d elements (sorted): ", n2);
-    for (int i=0; i<n2; i++) scanf("%d", &l2[i]);
-
+    for (int i=0; i<n2; i++) 
+        scanf("%d", &l2[i]);
     int n3 = n1+n2;
     int *l3 = (int*)malloc(n3 * sizeof(int));
 
@@ -36,5 +36,9 @@ int main() {
     free(l2);
     free(l3);
 
+    /*for (int x=0; x<n3; x++) 
+        printf("%d ", l3[x]);
+    printf("\n");*/
+    // will print:0 0 0 0 0 0 0 0
     return 0;
 }
