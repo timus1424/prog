@@ -1,2 +1,53 @@
-/.DS_Store
-/.vscode
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+
+# Compiled C/C++ executables
+a.out
+*.out
+# Compiled executables
+a.out
+*.out
+*.dSYM/
+cg/circle
+cg/circle1
+cg/dotted_line
+# Debug/build files
+*.dSYM/
+*.dSYM
+
+# Object files
+*.o
+*.obj
+
+# C/C++ temporary/build files
+*.d
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Python build files
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# OS / editor backup files
+*~

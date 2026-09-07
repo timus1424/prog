@@ -11,8 +11,7 @@ average batting score.
 using namespace std;
 
 class cricket {
-    string p_name;
-    string t_name;
+    string p_name, t_name;
     float batting_avg;
 
 public:
@@ -26,13 +25,13 @@ public:
         cin.ignore();
     }
 
-    void disp() const {
+    void disp() {
         cout << "Player: " << p_name
              << " | Team: " << t_name
              << " | Average: " << batting_avg << endl;
     }
 
-    string get_t_name() const {
+    string get_t_name() {
         return t_name;
     }
 };
@@ -56,7 +55,7 @@ int main() {
     cin >> n;
     cin.ignore();
 
-    cricket players[10];
+    cricket players[n];
     for (int i = 0; i < n; i++) {
         cout << "\n--- Player " << i + 1 << " ---\n";
         players[i].read();

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	int l1[] = {3,4,50,60}, l2[] = {7,8,90,100};
+	int l1[] = {3, 4, 5, 6}, l2[] = {50, 60, 70, 80, 90, 100};
 	int n1 = sizeof(l1)/sizeof(l1[0]);
 	int n2 = sizeof(l2)/sizeof(l2[0]);
 	int n3 = n1+n2;
@@ -17,13 +17,14 @@ int main() {
             		l3[k++] = l2[j++];
         	}
     	}
-    	while (i<n1) l3[k++] = l1[i++];
-    	while (j<n2) l3[k++] = l2[j++];
+    	while (i<n1) 
+			l3[k++] = l1[i++];
+    	while (j<n2) 
+			l3[k++] = l2[j++];
 
     	printf("Merged List:\n");
-    	for (int x=0; x<n3; x++) {
+    	for (int x=0; x<n3; x++) 
     	    printf("%d ", l3[x]);
-    	}
 	printf("\n");
     	return 0;
 }

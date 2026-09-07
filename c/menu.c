@@ -12,7 +12,7 @@ do {
         scanf("%d", &choice);
 
 	switch (choice) {
-	case 1: // PUSH
+		case 1: // PUSH
                 if (top == n-1)
                   	printf("Overflow! Stack is full.\n");
                	else {
@@ -21,21 +21,21 @@ do {
                     	stack[++top] = val;
                 }
                 break;
-	case 2: // POP
+		case 2: // POP
                 if (top == -1)
                     	printf("Underflow! Stack is empty.\n");
                 else
                     	printf("%d popped.\n", stack[top--]);
                 break;
 
-	case 3: // PEEK
-		if (top == -1)
+		case 3: // PEEK
+				if (top == -1)
                     	printf("Stack is empty.\n");
                 else
                    	printf("Top element = %d\n", stack[top]);
                	break;
 
-	case 4: // DISPLAY
+		case 4: // DISPLAY
                 if (top == -1)
                     	printf("Stack is empty.\n");
                 else {
@@ -46,14 +46,14 @@ do {
                 }
                 break;
 	
-	case 5: // EXIT
-		printf("Exiting...\n");
-		break;
+		case 5: // EXIT
+			printf("Exiting...\n");
+			break;
 
-	default:
-		printf("Invalid Choice!\n");
+		default:
+			printf("Invalid Choice!\n");
+		}
 	}
-}
 while(choice!=5);
 return 0;
 }

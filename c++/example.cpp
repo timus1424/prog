@@ -28,13 +28,15 @@ class example{
 };
 
 int main() {
-    example e1,e2,e3,e4;
+    example e1,e2,e3,e4,e5;
     e1.read();
     e2.read();
 //    e3=e1.operator+(e2);
     e3=e2+e1;
     e4=e2-e1;	//e4=e2-1;
+    e5=e1-e2;	
     e3.disp();
     e4.disp();	//3 4 will display 2 3
+    e5.disp();	//
     return 0;
 }
